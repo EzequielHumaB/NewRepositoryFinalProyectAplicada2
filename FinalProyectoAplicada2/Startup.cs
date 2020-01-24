@@ -27,6 +27,7 @@ namespace FinalProyectoAplicada2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddScoped<EmployeeServices>();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
         }
